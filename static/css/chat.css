@@ -63,7 +63,7 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.164);
     border-radius: 10px 10x 0px 0px;
     padding: 10px 0px 10x 0px;
 }
