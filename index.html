@@ -6,13 +6,14 @@
     <title>Chat Bot</title>
 
     <link rel="stylesheet" href="static/css/chat.css">
-    <link rel="stylesheet" href="static/css.home.css">
+    <link rel="stylesheet" href="static/css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
 </head>
     <body>
+        <!-- Chat Bar Block -->
         <div class="chat-bar-collapsible">
             <button id="chat-button" type="button" class="collapsible">Chat with us!
                 <i id="chat-icon" style="color: #fff" class="fa fa-fw fa-comments-o"></i>
@@ -20,10 +21,28 @@
 
             <div class="content">
                 <div class="full-chat-block">
+                    <!-- Message Container -->
                     <div class="outer-container">
+                        <!-- Messages -->
                         <div id="chatbox">
                             <h5 id="chat-timestamp"></h5>
                             <p id="botStarterMessage" class="botText"><span><Loading class=""></Loading></span></p>
+                        </div>
+
+                        <!-- User Input Box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input type="text" name="msg" placeholder="Tap 'Enter' to send a message"><p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson" class="fa fa-fw fa-heart" onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: gray" class="fa fa-fw fa-send" onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
                         </div>
                     </div>
                 </div>
